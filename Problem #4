@@ -1,0 +1,35 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+int main()
+{
+	double a, b, c;
+	cout << "Please Enter First Number" << endl;
+	cin >> a;
+	cout << "Please Enter Second Number" << endl;
+	cin >> b,
+	cout << "Please Enter Third Number" << endl;
+	cin >> c;
+	if (a>b && c<a)
+	cout << "The Largest of the three numbers is " << a;
+	else if (b>a && c<b)
+	cout << "The Largest of the three numbers is " << b;
+	else if (c>a && b<c)
+	cout << "The Largest of the three numbers is " << c;
+	else if (a==b && b==c)
+	cout << "The Largest Number is " << a << endl;
+	else if (a==b && b<c )
+	cout << "The Largest Number is "<< c << endl;
+	else if (a==b && b>c )
+	cout << "The Largest Number is "<< b << endl;
+	else if (b==c && b<a )
+	cout << "The Largest Number is "<< a << endl;
+	else if (b==c && b>a )
+	cout << "The Largest Number is "<< c << endl;
+		else if (a==c && b<a )
+	cout << "The Largest Number is "<< a << endl;
+
+	_getch();
+	return 0;
+}
