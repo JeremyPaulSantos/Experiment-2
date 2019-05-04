@@ -1,0 +1,64 @@
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+int main ()
+{
+	int choice, n, totalHours, bill;
+	
+
+	cout << "Enter chosen Internet package" << endl;
+	cout << "type:" << endl;
+	cout << "1. P995/mo " << endl;
+	cout << "2. P1450/mo " << endl;
+	cout << "3. P1995/mo " << endl;
+	cout << "Enter choice: (1-3): ";
+	cin >> choice;
+	
+	switch(choice)
+	{
+	    case 1:
+	    cout << "P995/mo" << endl;
+	    	cout << "Enter total hours" << endl;
+			cin >> totalHours;
+	
+			if (totalHours<=10)
+	   		bill= 995;
+			else 
+			bill= 995 + ((totalHours-10) * 20);
+			cout << "Your Total Bill is: \n" << "P" << bill << endl;
+	    break;
+	    
+	    
+	    case 2:
+	     cout << "P1450/mo" << endl;
+	    	cout << "Enter total hours" << endl;
+	cin >> totalHours;
+	
+	if (totalHours<=20)
+	bill= 1450;
+	else 
+	bill= 1450 + ((totalHours-20) * 10);
+	cout << "Your total bill is: \n" << "P" << bill << endl;
+	
+	    break;
+	    case 3:
+	    cout << "P1995/mo" << endl;
+	    
+	bill= 1995;
+	cout << "Your Total Bill is: \n" << "P" << bill << endl;
+
+	    break;
+	    
+	    default:
+	    cout << "you must choose a number between 1 and 3";
+	}
+	
+	
+
+	
+
+	return 0;
+} 
+
