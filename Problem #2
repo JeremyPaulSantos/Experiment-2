@@ -1,0 +1,29 @@
+#include <iostream>
+ #include <conio.h>
+ using namespace std;
+ int main()
+ {
+ 	double gallons1, gallons2, Previous, Recent, Totalbill, Unpaid;
+ 	int months;
+ 	
+ 	cout << "Computing for Water Bill " << endl;
+ 	cout << "Note That:" << endl;
+ 	cout << "Updated Water Demand Charge = P35" << endl;
+ 	cout << "Consumption Charge = P1.10" << endl;
+ 	cout << "Please Enter Previous Gallons used = ";
+ 	cin >> gallons1;
+ 	cout << "Please Enter Recent Gallons used = ";
+ 	cin >> gallons2;
+ 	cout << "Please Enter Unpaid Amount" << endl;
+ 	cin >> Unpaid;
+ 	if (Unpaid>0)
+ 	Totalbill= 35+(Recent-Previous)*1.10+20+Unpaid;
+	else Totalbill= 35+(Recent-Previous)*1.10;
+ 	cout << "Total: " << "P" << Totalbill << endl;
+ 	
+
+ 	
+ 	_getch();
+ 	return 0;
+ 	  
+ }
