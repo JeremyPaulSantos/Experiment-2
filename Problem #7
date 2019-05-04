@@ -1,0 +1,33 @@
+#include <iostream>
+#include <conio.h>
+using namespace std;
+int main()
+
+
+{
+	int n, sum, i;
+
+	cout << "Select Preferred Number " << endl;
+	cin >> n;
+	while (n>0)
+	{
+		
+	for (sum=0, i=1; i<=n; i++)
+		sum+=i;
+	
+
+	cout << "THe sum of all the number from 1 to " << n << " is: " << sum << endl;
+ 	cout << "Select a Number ";
+	cin >> n;
+	
+	
+}
+cout << "THANK YOU!" << endl;
+
+	
+
+	_getch();
+	return 0;
+
+	
+}
